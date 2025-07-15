@@ -1,0 +1,106 @@
+{
+  "user_categorizations": [
+    {
+      "name": "expertise",
+      "categories": [
+        {
+          "name": "expert",
+          "probability": 0.7,
+          "description": "a specialized user with deep understanding of the corpus"
+        },
+        {
+          "name": "novice",
+          "probability": 0.3,
+          "description": "a regular user with no understanding of specialized terms"
+        }
+      ]
+    }
+  ],
+  "question_categorizations": [
+    {
+      "name": "factuality",
+      "categories": [
+        {
+          "name": "factoid",
+          "probability": 0.6,
+          "description": "question seeking a specific, concise piece of information or a short fact about a particular subject, such as a name, date, or number"
+        },
+        {
+          "name": "open-ended",
+          "probability": 0.4,
+          "description": "question inviting detailed or exploratory responses, encouraging discussion or elaboration"
+        }
+      ]
+    },
+    {
+      "name": "premise",
+      "categories": [
+        {
+          "name": "direct",
+          "probability": 0.7,
+          "description": "question that does not contain any premise or any information about the user"
+        },
+        {
+          "name": "with-premise",
+          "probability": 0.3,
+          "description": "question starting with a very short premise, where the user reveals their needs or some information about himself"
+        }
+      ]
+    },
+    {
+      "name": "phrasing",
+      "categories": [
+        {
+          "name": "concise-and-natural",
+          "probability": 0.3,
+          "description": "phrased in the way people typically speak, reflecting everyday language use, without formal or artificial structure. It is a concise direct question consisting of less than 10 words"
+        },
+        {
+          "name": "verbose-and-natural",
+          "probability": 0.4,
+          "description": "phrased in the way people typically speak, reflecting everyday language use, without formal or artificial structure. It is a relatively long question consisting of more than 9 words"
+        },
+        {
+          "name": "short-search-query",
+          "probability": 0.15,
+          "description": "phrased as a typed web query for search engines (only keywords, without punctuation and without a natural-sounding structure). It consists of less than 7 words"
+        },
+        {
+          "name": "long-search-query",
+          "probability": 0.15,
+          "description": "phrased as a typed web query for search engines (only keywords, without punctuation and without a natural-sounding structure). It consists of more than 6 words"
+        }
+      ]
+    },
+    {
+      "name": "linguistic_variation",
+      "categories": [
+        {
+          "name": "similar-to-document",
+          "probability": 0.6,
+          "description": "phrased using the same terminology and phrases appearing in the document"
+        },
+        {
+          "name": "distance-from-document",
+          "probability": 0.4,
+          "description": "phrased using terms completely different from the ones appearing in the document"
+        }
+      ]
+    },
+    {
+      "name": "language",
+      "categories": [
+        {
+          "name": "chinese",
+          "probability": 0.7,
+          "description": "generate questions and answers in Chinese language"
+        },
+        {
+          "name": "english",
+          "probability": 0.3,
+          "description": "generate questions and answers in English language"
+        }
+      ]
+    }
+  ]
+} 
